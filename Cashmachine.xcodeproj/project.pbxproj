@@ -8,12 +8,17 @@
 
 /* Begin PBXBuildFile section */
 		41A92D9923C3470C0047A41C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41A92D9823C3470C0047A41C /* AppDelegate.swift */; };
-		41A92D9B23C3470C0047A41C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41A92D9A23C3470C0047A41C /* SceneDelegate.swift */; };
 		41A92D9D23C3470C0047A41C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41A92D9C23C3470C0047A41C /* ViewController.swift */; };
 		41A92DA023C3470C0047A41C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 41A92D9E23C3470C0047A41C /* Main.storyboard */; };
 		41A92DA223C347120047A41C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 41A92DA123C347120047A41C /* Assets.xcassets */; };
 		41A92DA523C347120047A41C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 41A92DA323C347120047A41C /* LaunchScreen.storyboard */; };
 		41A92DB023C347120047A41C /* CashmachineTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41A92DAF23C347120047A41C /* CashmachineTests.swift */; };
+		41A92DBB23C4963F0047A41C /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41A92DBA23C4963F0047A41C /* Product.swift */; };
+		41A92DC123C4996D0047A41C /* FinishController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41A92DC023C4996D0047A41C /* FinishController.swift */; };
+		41A92DC323C499CD0047A41C /* BarcodeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41A92DC223C499CD0047A41C /* BarcodeController.swift */; };
+		41A92DC523C499F70047A41C /* InfoProductController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41A92DC423C499F70047A41C /* InfoProductController.swift */; };
+		41A92DC823C49A650047A41C /* CashmachineService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41A92DC723C49A650047A41C /* CashmachineService.swift */; };
+		41A92DCB23C49BBE0047A41C /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41A92DCA23C49BBE0047A41C /* Coordinator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,7 +34,6 @@
 /* Begin PBXFileReference section */
 		41A92D9523C3470C0047A41C /* Cashmachine.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Cashmachine.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		41A92D9823C3470C0047A41C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		41A92D9A23C3470C0047A41C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		41A92D9C23C3470C0047A41C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		41A92D9F23C3470C0047A41C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		41A92DA123C347120047A41C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -38,6 +42,12 @@
 		41A92DAB23C347120047A41C /* CashmachineTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CashmachineTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		41A92DAF23C347120047A41C /* CashmachineTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CashmachineTests.swift; sourceTree = "<group>"; };
 		41A92DB123C347120047A41C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		41A92DBA23C4963F0047A41C /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
+		41A92DC023C4996D0047A41C /* FinishController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinishController.swift; sourceTree = "<group>"; };
+		41A92DC223C499CD0047A41C /* BarcodeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarcodeController.swift; sourceTree = "<group>"; };
+		41A92DC423C499F70047A41C /* InfoProductController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoProductController.swift; sourceTree = "<group>"; };
+		41A92DC723C49A650047A41C /* CashmachineService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CashmachineService.swift; sourceTree = "<group>"; };
+		41A92DCA23C49BBE0047A41C /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,8 +89,11 @@
 		41A92D9723C3470C0047A41C /* Cashmachine */ = {
 			isa = PBXGroup;
 			children = (
+				41A92DBD23C498B90047A41C /* Presentation */,
+				41A92DBC23C4982E0047A41C /* Entities */,
+				41A92DC623C49A4E0047A41C /* Service */,
+				41A92DC923C49B880047A41C /* Coordinator */,
 				41A92D9823C3470C0047A41C /* AppDelegate.swift */,
-				41A92D9A23C3470C0047A41C /* SceneDelegate.swift */,
 				41A92D9C23C3470C0047A41C /* ViewController.swift */,
 				41A92D9E23C3470C0047A41C /* Main.storyboard */,
 				41A92DA123C347120047A41C /* Assets.xcassets */,
@@ -97,6 +110,56 @@
 				41A92DB123C347120047A41C /* Info.plist */,
 			);
 			path = CashmachineTests;
+			sourceTree = "<group>";
+		};
+		41A92DBC23C4982E0047A41C /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				41A92DBA23C4963F0047A41C /* Product.swift */,
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
+		41A92DBD23C498B90047A41C /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				41A92DBF23C499040047A41C /* Add */,
+				41A92DBE23C498D10047A41C /* Result */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		41A92DBE23C498D10047A41C /* Result */ = {
+			isa = PBXGroup;
+			children = (
+				41A92DC023C4996D0047A41C /* FinishController.swift */,
+			);
+			path = Result;
+			sourceTree = "<group>";
+		};
+		41A92DBF23C499040047A41C /* Add */ = {
+			isa = PBXGroup;
+			children = (
+				41A92DC223C499CD0047A41C /* BarcodeController.swift */,
+				41A92DC423C499F70047A41C /* InfoProductController.swift */,
+			);
+			path = Add;
+			sourceTree = "<group>";
+		};
+		41A92DC623C49A4E0047A41C /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				41A92DC723C49A650047A41C /* CashmachineService.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		41A92DC923C49B880047A41C /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				41A92DCA23C49BBE0047A41C /* Coordinator.swift */,
+			);
+			path = Coordinator;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -200,9 +263,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				41A92DC823C49A650047A41C /* CashmachineService.swift in Sources */,
 				41A92D9D23C3470C0047A41C /* ViewController.swift in Sources */,
+				41A92DC523C499F70047A41C /* InfoProductController.swift in Sources */,
+				41A92DBB23C4963F0047A41C /* Product.swift in Sources */,
+				41A92DC323C499CD0047A41C /* BarcodeController.swift in Sources */,
 				41A92D9923C3470C0047A41C /* AppDelegate.swift in Sources */,
-				41A92D9B23C3470C0047A41C /* SceneDelegate.swift in Sources */,
+				41A92DC123C4996D0047A41C /* FinishController.swift in Sources */,
+				41A92DCB23C49BBE0047A41C /* Coordinator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
