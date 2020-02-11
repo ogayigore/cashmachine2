@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import UIKit
 
 struct Product {
     let barcode: Int
@@ -14,4 +15,5 @@ struct Product {
     let unit: String
     let price: Double
     let count: Double
+    let qr: UIImage
 }

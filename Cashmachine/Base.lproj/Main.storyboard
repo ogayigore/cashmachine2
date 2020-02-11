@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -162,7 +162,7 @@
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lUw-dC-CDw">
                                 <rect key="frame" x="20" y="138" width="374" height="231"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                                <mutableString key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</mutableString>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                 <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -176,7 +176,7 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ECR-nY-aog">
-                                <rect key="frame" x="40" y="419" width="334" height="40"/>
+                                <rect key="frame" x="40" y="542" width="334" height="40"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="bKc-Y8-b3j"/>
                                 </constraints>
@@ -184,19 +184,29 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="RIg-AB-2Ih">
+                                <rect key="frame" x="87" y="384" width="240" height="128"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="128" id="3c8-Am-lVh"/>
+                                    <constraint firstAttribute="width" constant="240" id="McI-eu-kX1"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
                             <constraint firstItem="mTF-rR-mI9" firstAttribute="trailing" secondItem="ECR-nY-aog" secondAttribute="trailing" constant="40" id="3ce-Uz-haA"/>
                             <constraint firstItem="G5t-fX-4Mg" firstAttribute="top" secondItem="mTF-rR-mI9" secondAttribute="top" constant="45" id="GCl-lf-fYr"/>
+                            <constraint firstItem="O13-ii-AEl" firstAttribute="top" secondItem="ECR-nY-aog" secondAttribute="bottom" constant="224" id="GR7-5Q-547"/>
                             <constraint firstItem="mTF-rR-mI9" firstAttribute="trailing" secondItem="lUw-dC-CDw" secondAttribute="trailing" constant="20" id="IHI-SD-6w0"/>
-                            <constraint firstItem="O13-ii-AEl" firstAttribute="top" secondItem="ECR-nY-aog" secondAttribute="bottom" constant="347" id="J8y-d8-ovP"/>
+                            <constraint firstItem="RIg-AB-2Ih" firstAttribute="leading" secondItem="mTF-rR-mI9" secondAttribute="leading" constant="87" id="MeZ-1k-aq9"/>
+                            <constraint firstItem="ECR-nY-aog" firstAttribute="top" secondItem="RIg-AB-2Ih" secondAttribute="bottom" constant="30" id="V60-pk-YQg"/>
                             <constraint firstItem="O13-ii-AEl" firstAttribute="leading" secondItem="mTF-rR-mI9" secondAttribute="leading" constant="30" id="ZtY-gm-TDB"/>
                             <constraint firstItem="lUw-dC-CDw" firstAttribute="top" secondItem="G5t-fX-4Mg" secondAttribute="bottom" constant="20" id="aF6-Kg-t7J"/>
                             <constraint firstItem="mTF-rR-mI9" firstAttribute="trailing" secondItem="O13-ii-AEl" secondAttribute="trailing" constant="30" id="b56-Cy-yyR"/>
+                            <constraint firstItem="RIg-AB-2Ih" firstAttribute="top" secondItem="lUw-dC-CDw" secondAttribute="bottom" constant="15" id="hAs-BY-aOn"/>
                             <constraint firstItem="mTF-rR-mI9" firstAttribute="trailing" secondItem="G5t-fX-4Mg" secondAttribute="trailing" constant="30" id="n4m-Rk-rEi"/>
                             <constraint firstItem="lUw-dC-CDw" firstAttribute="leading" secondItem="mTF-rR-mI9" secondAttribute="leading" constant="20" id="qwS-m4-JYl"/>
-                            <constraint firstItem="ECR-nY-aog" firstAttribute="top" secondItem="lUw-dC-CDw" secondAttribute="bottom" constant="50" id="vaJ-Rz-Yce"/>
+                            <constraint firstItem="mTF-rR-mI9" firstAttribute="trailing" secondItem="RIg-AB-2Ih" secondAttribute="trailing" constant="87" id="vcg-Q7-tZE"/>
                             <constraint firstItem="G5t-fX-4Mg" firstAttribute="leading" secondItem="mTF-rR-mI9" secondAttribute="leading" constant="30" id="y3t-io-Ef4"/>
                             <constraint firstItem="ECR-nY-aog" firstAttribute="leading" secondItem="mTF-rR-mI9" secondAttribute="leading" constant="40" id="z7D-9o-U6G"/>
                             <constraint firstItem="mTF-rR-mI9" firstAttribute="bottom" secondItem="O13-ii-AEl" secondAttribute="bottom" constant="20" id="zA9-b5-BBc"/>
@@ -207,6 +217,7 @@
                         <outlet property="alertLabel" destination="ECR-nY-aog" id="EJ4-Xj-5OK"/>
                         <outlet property="descriptionTextView" destination="lUw-dC-CDw" id="aMA-yN-2aP"/>
                         <outlet property="nameLabel" destination="G5t-fX-4Mg" id="Pxs-yq-JEC"/>
+                        <outlet property="qrImageView" destination="RIg-AB-2Ih" id="dEx-kA-lKg"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GPx-d2-wrx" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

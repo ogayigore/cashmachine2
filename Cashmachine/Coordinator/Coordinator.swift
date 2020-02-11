@@ -54,12 +54,16 @@ extension Coordinator: BarcodeControllerOutput {
 }
 
 extension Coordinator: InfoProductControllerOutput {
+    
     func entered(name: String, unit: String, price: Double, count: Double) {
+        let qrImage = generateQRCode(from: "\(barcode)\n\(name)\n\(unit)\n\(price)\n\(count)")
         let product = Product(barcode: barcode,
                               name: name,
                               unit: unit,
                               price: price,
-                              count: count)
+                              count: count,
+                              qr: qrImage!)
+        
         self.product = product
         let finishVC = vc("FinishController") as! FinishController
         finishVC.cashmachineService = cashmachineService
@@ -94,5 +98,23 @@ private extension Coordinator {
     func vc(_ id: String) -> UIViewController {
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
         return storyboard.instantiateViewController(identifier: id)
+    }
+}
+
+private extension Coordinator {
+    private func generateQRCode(from string: String) -> UIImage? {
+        print("GENERATE QR")
+        let data = string.data(using: String.Encoding.ascii)
+
+        if let filter = CIFilter(name: "CIQRCodeGenerator") {
+            filter.setValue(data, forKey: "inputMessage")
+            let transform = CGAffineTransform(scaleX: 3, y: 3)
+
+            if let output = filter.outputImage?.transformed(by: transform) {
+                return UIImage(ciImage: output)
+            }
+        }
+
+        return nil
     }
 }
